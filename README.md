@@ -4,6 +4,7 @@ This project provides a solution to detect fraudulent transactions within the Et
 
 ## Table of Contents
 - [Technical Summary](#technical-summary)
+- [Developed Pipelines](#developed-pipelines)
 - [Project Structure](#project-structure)
 - [Setup and Installation](#setup-and-installation)
 - [ZenML Integration](#zenml-installation)
@@ -23,6 +24,18 @@ This project uses a genetic algorithm to enhance fraud detection in Ethereum tra
 4. **Deployment and Prediction**: The trained model is deployed using Streamlit to provide a user-friendly interface for predictions.
 
 By combining genetic algorithms and machine learning, this project aims to achieve high accuracy in detecting potentially fraudulent transactions, aiding in the security of blockchain transactions.
+
+---
+
+## Developed Pipelines
+### Continuous Deployment Pipeline
+This pipeline is designed to automate the process of deploying trained machine-learning models. It ensures that the latest and most effective models are continuously deployed, facilitating seamless updates and improvements in the model serving process.
+![deployment_pipeline](https://github.com/user-attachments/assets/46d25235-00ed-4876-91e0-35edaca7d996)
+
+
+### Inference Pipeline
+This pipeline is focused on executing batch inference jobs using the continuous deployed model. This pipeline is essential for processing large volumes of data efficiently, allowing users to obtain predictions in a batch manner.
+![Untitled design](https://github.com/user-attachments/assets/174f1086-28e4-402b-bc30-7fcbfb14a58f)
 
 ---
 
@@ -86,7 +99,9 @@ zenml stack register local-mlflow-stack -a default -o default -d mlflow -e mlflo
 
 ## Data Preparation
 
-To be added
+- To be added
+
+
 ---
 
 
@@ -112,6 +127,9 @@ streamlit run app.py
 ```
 
 Once the application is running, navigate to the provided local URL (typically http://localhost:8501) to access the web interface. Here, you can input transaction data and obtain predictions on the likelihood of fraud.
+
+---
+
 
 ## Contributing
 Whether you're interested in enhancing the genetic algorithm, refining the fraud detection model, or improving the user interface, your input is invaluable.

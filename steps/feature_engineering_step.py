@@ -23,4 +23,6 @@ def feature_engineering_step(df: pd.DataFrame) -> pd.DataFrame:
         NormalizeFeatureEngineeringStrategy()
     )
     feature_engineered = feature_engineering_handler.apply_transformation(df)
+
+    print(feature_engineered.shape)
     return feature_engineered

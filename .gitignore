@@ -19,12 +19,12 @@ build/
 # Logs
 *.log
 
-# Data files
-*.csv
-*.zip
+# # Data files
+# *.csv
+# *.zip
 
-# Model files
-*.h5
+# # Model files
+# *.h5
 
 # IDE specific files
 .vscode/

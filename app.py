@@ -1,12 +1,12 @@
 import streamlit as st
 import requests
 import json
-import random  # Import the random module
+import random
 
-# Set the URL of the MLflow prediction server
-PREDICTION_URL = (
-    "http://127.0.0.1:8000/invocations"  # Update with your actual prediction server URL
-)
+from constants.string_constants import StringConstants
+
+# This should ideally be set as the path to the deployed model server
+PREDICTION_URL = StringConstants.genetic_model_path
 
 # Streamlit app title
 st.title("Ethereum Fraud Detection")

@@ -6,6 +6,8 @@ from sklearn.pipeline import Pipeline
 from keras.models import load_model
 from lightgbm import LGBMRegressor
 
+from constants.string_constants import StringConstants
+
 
 # Abstract class for Model Building Strategy
 class DataModellingStrategy(ABC):
@@ -53,9 +55,7 @@ class GACSModellingStrategy(DataModellingStrategy):
 
         try:
             # Load the pre-trained model
-            gacs_model = load_model(
-                "/Users/botcoder/MyDocs/AiLearn/Antern Learn/project/ethereum-fraud-detection/pre_trained_models/genetic_model.h5"
-            )
+            gacs_model = load_model(StringConstants.genetic_model_path)
             logger.info("Model loaded successfully.")
         except Exception as e:
             logger.error(f"Error loading model: {e}")

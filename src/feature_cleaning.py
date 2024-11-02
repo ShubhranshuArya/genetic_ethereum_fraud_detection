@@ -124,14 +124,36 @@ class CorrelatedFeatureCleaningStrategy(FeatureCleaningStrategy):
             pd.DataFrame: The DataFrame with highly correlated features removed.
         """
         logging.info(f"Removing highly correlated features")
-        # Calculate correlation matrix
-        corr_matrix = df.corr().abs()
+        # # Calculate correlation matrix
+        # corr_matrix = df.corr().abs()
 
-        # Select upper triangle of correlation matrix
-        upper = corr_matrix.where(np.triu(np.ones(corr_matrix.shape), k=1).astype(bool))
+        # Features to be removed
+        to_drop = [
+            "total transactions (including tnx to create contract",
+            " ERC20 avg val rec",
+            " ERC20 avg val rec",
+            " ERC20 max val rec",
+            " ERC20 min val rec",
+            " ERC20 uniq rec contract addr",
+            "max val sent",
+            " ERC20 avg val sent",
+            " ERC20 min val sent",
+            " ERC20 max val sent",
+            " Total ERC20 tnxs",
+            "Unique Sent To Addresses",
+            "Unique Received From Addresses",
+            "total ether received",
+            " ERC20 uniq sent token name",
+            "min value received",
+            "min val sent",
+            " ERC20 uniq rec addr",
+        ]
 
-        # Find index of feature with correlation greater than 0.95
-        to_drop = [column for column in upper.columns if any(upper[column] > 0.9)]
+        # # Select upper triangle of correlation matrix
+        # upper = corr_matrix.where(np.triu(np.ones(corr_matrix.shape), k=1).astype(bool))
+
+        # # Find index of feature with correlation greater than 0.95
+        # to_drop = [column for column in upper.columns if any(upper[column] > 0.9)]
 
         # Drop features
         cleaned_df = df.drop(to_drop, axis=1)

@@ -22,4 +22,6 @@ def data_splitter_step(
     splitter = DataSplitter(strategy=SimpleTrainTestSplitStrategy())
     X_train, X_test, y_train, y_test = splitter.split(df, target_column)
 
+    print("X_train shape:", X_train.shape)
+
     return X_train, X_test, y_train, y_test

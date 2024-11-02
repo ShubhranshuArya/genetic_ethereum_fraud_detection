@@ -55,4 +55,6 @@ def feature_cleaning_step(
     feature_cleaning.set_strategy(RenameFeatureCleaningStrategy())
     cleaned_df = feature_cleaning.apply_strategy(balanced_features)
 
+    print(cleaned_df.shape)
+
     return cleaned_df

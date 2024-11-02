@@ -37,7 +37,7 @@ def data_modelling_step(
     This step is responsible for building and training a machine learning model to predict Ethereum transaction fraud.
     It utilizes the GACSModellingStrategy for model building and training, and leverages MLflow for experiment tracking.
     """
-    data_modeller = DataModeller(LGBMModellingStrategy())
+    data_modeller = DataModeller(GACSModellingStrategy())
 
     # Start an MLflow run to log the model training process
     if not mlflow.active_run():

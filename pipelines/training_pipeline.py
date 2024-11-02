@@ -35,7 +35,7 @@ def ml_pipeline():
 
     # Data Splitting Step
     X_train, X_test, y_train, y_test = data_splitter_step(
-        feature_cleaned_df,
+        df=feature_cleaned_df,
         target_column="flag",
     )
 
@@ -51,5 +51,4 @@ def ml_pipeline():
     )
 
     # TODO: Implement model evaluation
-
     return model

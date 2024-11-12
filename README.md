@@ -2,7 +2,7 @@
 
 This project provides a solution to detect fraudulent transactions within the Ethereum network by leveraging the state-of-the-art genetic algorithm to optimize a neural network for modelling. It combines advanced data processing with fraud detection strategies, offering a robust pipeline for analyzing Ethereum transactions and identifying potential fraud in real-time.
 
-## Table of Contents
+## 📙 Table of Contents
 - [Technical Summary](#technical-summary)
 - [Developed Pipelines](#developed-pipelines)
 - [Project Structure](#project-structure)
@@ -12,9 +12,8 @@ This project provides a solution to detect fraudulent transactions within the Et
 - [Running the Project](#running-the-project)
 - [Contributing](#contributing)
 
----
 
-## Technical Summary
+## 👇 Technical Summary
 
 This project uses a genetic algorithm to enhance fraud detection in Ethereum transactions. The core of the project consists of data ingestion, preprocessing, model training, and a deployment pipeline:
 
@@ -25,21 +24,19 @@ This project uses a genetic algorithm to enhance fraud detection in Ethereum tra
 
 By combining genetic algorithms and machine learning, this project aims to achieve high accuracy in detecting potentially fraudulent transactions, aiding in the security of blockchain transactions.
 
----
 
-## Developed Pipelines
-### Continuous Deployment Pipeline
+## ⚡️ Developed Pipelines
+### -> Continuous Deployment Pipeline
 This pipeline is designed to automate the process of deploying trained machine-learning models. It ensures that the latest and most effective models are continuously deployed, facilitating seamless updates and improvements in the model serving process.
 ![deployment_pipeline](https://github.com/user-attachments/assets/46d25235-00ed-4876-91e0-35edaca7d996)
 
 
-### Inference Pipeline
+### -> Inference Pipeline
 This pipeline is focused on executing batch inference jobs using the continuous deployed model. This pipeline is essential for processing large volumes of data efficiently, allowing users to obtain predictions in a batch manner.
 ![Untitled design](https://github.com/user-attachments/assets/174f1086-28e4-402b-bc30-7fcbfb14a58f)
 
----
 
-## Project Structure
+## 🔥 Project Structure
 
 ```plaintext
 ├── data/                   # Directory for Ethereum transaction data files (CSV or ZIP format)
@@ -53,10 +50,8 @@ This pipeline is focused on executing batch inference jobs using the continuous 
 └── README.md               # Project documentation
 ```
 
----
 
-
-## Setup and Installation
+## 🧑‍💻 Setup and Installation
 1. Clone the Repository
 2. Set Up a Virtual Environment
 ```
@@ -76,10 +71,8 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
----
 
-
-## ZenML Installation
+## 🧘 ZenML Installation
 1. Install ZenML - https://docs.zenml.io/getting-started/installation 
 
 2. Install some integrations using ZenML:
@@ -94,18 +87,13 @@ zenml model-deployer register mlflow --flavor=mlflow
 zenml stack register local-mlflow-stack -a default -o default -d mlflow -e mlflow_tracker --set
 ```
 
----
 
-
-## Data Preparation
+## 📚 Data Preparation
 
 - To be added
 
 
----
-
-
-## Running the Project
+## 🏃 Running the Project
 The project can be run in distinct stages: data ingestion, model training, deployment, and prediction.
 
 Step 1: Model Training
@@ -128,10 +116,8 @@ streamlit run app.py
 
 Once the application is running, navigate to the provided local URL (typically http://localhost:8501) to access the web interface. Here, you can input transaction data and obtain predictions on the likelihood of fraud.
 
----
 
-
-## Contributing
+## 🤝 Contributing
 Whether you're interested in enhancing the genetic algorithm, refining the fraud detection model, or improving the user interface, your input is invaluable.
 
 To contribute:

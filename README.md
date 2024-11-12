@@ -3,14 +3,14 @@
 This project provides a solution to detect fraudulent transactions within the Ethereum network by leveraging the state-of-the-art genetic algorithm to optimize a neural network for modelling. It combines advanced data processing with fraud detection strategies, offering a robust pipeline for analyzing Ethereum transactions and identifying potential fraud in real-time.
 
 ## 📙 Table of Contents
-- [Technical Summary](#technical-summary)
-- [Developed Pipelines](#developed-pipelines)
-- [Project Structure](#project-structure)
-- [Setup and Installation](#setup-and-installation)
-- [ZenML Integration](#zenml-installation)
-- [Data Preparation](#data-preparation)
-- [Running the Project](#running-the-project)
-- [Contributing](#contributing)
+- [Technical Summary](#-technical-summary)
+- [Developed Pipelines](#%EF%B8%8F-developed-pipelines)
+- [Project Structure](#-project-structure)
+- [Setup and Installation](#-setup-and-installation)
+- [ZenML Integration](#-zenml-installation)
+- [Data Preparation](#-data-preparation)
+- [Running the Project](#-running-the-project)
+- [Contributing](#-contributing)
 
 
 ## 👇 Technical Summary

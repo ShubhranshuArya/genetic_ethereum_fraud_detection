@@ -1,4 +1,4 @@
-![research_poster](https://github.com/user-attachments/assets/c2bde2f2-e94c-4730-9d6c-e24fee8c6c56)
+![project_poster](https://github.com/user-attachments/assets/cc38a820-0d00-4a85-ae6e-a16769f12ea2)
 
 This project provides a solution to detect fraudulent transactions within the Ethereum network by leveraging the state-of-the-art genetic algorithm to optimize a neural network for modelling. It combines advanced data processing with fraud detection strategies, offering a robust pipeline for analyzing Ethereum transactions and identifying potential fraud in real-time.
 
